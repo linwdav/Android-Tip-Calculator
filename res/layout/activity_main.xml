@@ -9,8 +9,77 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Enter total amount:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:text="0.00"
+        android:textSize="15sp"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/btTip20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btTip15"
+        android:layout_alignBottom="@+id/btTip15"
+        android:layout_toRightOf="@+id/btTip15"
+        android:text="20%" />
+
+    <Button
+        android:id="@+id/btTip15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btTip10"
+        android:layout_alignBottom="@+id/btTip10"
+        android:layout_centerHorizontal="true"
+        android:text="15%" />
+
+    <Button
+        android:id="@+id/btTip10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="100dp"
+        android:layout_toLeftOf="@+id/btTip15"
+        android:text="10%" />
+
+    <TextView
+        android:id="@+id/tvTotalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="$0.00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btTip10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="97dp"
+        android:layout_marginLeft="34dp"
+        android:text="Tip is:"
+        android:textSize="20sp" />
 
 </RelativeLayout>
