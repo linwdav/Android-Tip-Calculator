@@ -51,15 +51,6 @@
         android:layout_centerHorizontal="true"
         android:text="15%" />
 
-    <Button
-        android:id="@+id/btTip10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="100dp"
-        android:layout_toLeftOf="@+id/btTip15"
-        android:text="10%" />
-
     <TextView
         android:id="@+id/tvTotalTip"
         android:layout_width="wrap_content"
@@ -81,5 +72,23 @@
         android:layout_marginLeft="34dp"
         android:text="Tip is:"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btTip15"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="15dp"
+        android:text="Choose tip:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btTip10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btTip15"
+        android:text="10%" />
 
 </RelativeLayout>
